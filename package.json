@@ -19,7 +19,7 @@
     "@angular/platform-browser": "^8.0.0",
     "@angular/platform-browser-dynamic": "^8.0.0",
     "@angular/router": "^8.0.0",
-    "bootstrap": "3.3.7",
+    "bootstrap": "3.4.1",
     "core-js": "^3.1.2",
     "ngx-carousel-3d": "^1.0.1",
     "tslib": "^1.9.0",
