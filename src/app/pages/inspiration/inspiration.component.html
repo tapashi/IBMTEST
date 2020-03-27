@@ -1,0 +1,25 @@
+<div class="inspiration-box" *ngIf="dataObj">
+  <h1>Inspiration</h1>
+  <h2>{{dataObj?.heading}}</h2>
+  <div class="info-box">
+    <div class="img-box">
+      <img src="../../../assets/images/stanger-things_raw.png" alt="starnger things image" />
+    </div>
+    <div>
+      <h3>{{dataObj?.description}}</h3>
+      <p>{{dataObj?.snippets}}</p>
+    </div>
+  </div>
+  <!--Video section-->
+  <div class="info-box mT30px">
+    <div class="quote-section">
+      <blockquote>
+        <em>{{dataObj?.quote?.text}}</em>
+      </blockquote>
+      <p class="align-right">-{{dataObj?.quote?.author}}</p>
+    </div>
+    <div class="video-section">
+      <iframe [src]="getVideoUrl(dataObj?.videoEmbed)"  width="100%" ></iframe>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,20 @@
+<div class="episode-box" *ngIf="gallery">
+  <h1>Episodes</h1>
+  <div  class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide" *ngFor="let item of gallery">
+        <div class="swiper-content">
+            <div class="swiper-text">
+                {{item.text}}
+            </div>
+        </div>
+      </div>
+    </div>
+    <div class="swiper-scrollbar"></div>
+    <div class="swiper-pagination"></div>
+   
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  </div>
+</div>
+  

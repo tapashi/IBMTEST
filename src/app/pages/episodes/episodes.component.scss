@@ -1,0 +1,35 @@
+.episode-box {
+    h1 {
+        color: white;
+    }
+    .list-info {
+        color: white;
+        display: flex;
+        flex:1;
+        div {
+            width: 50%;
+            ul {
+                list-style: none;
+                li {
+                    p{
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 767px) {
+    .episode-box {
+        h1 {
+            color: white;
+        }
+        .list-info {
+            
+            display: block;
+            div {
+                width:100%;
+            }
+        }
+    }
+}

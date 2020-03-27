@@ -1,0 +1,17 @@
+<div class="episode-box" *ngIf="episodeList">
+  <h1>Episodes</h1>
+  <div class="list-info">
+    <div *ngFor = "let season of seasonList; let i = index" >
+      <div>
+       <h3>Seoson {{i+1}}</h3>
+       <ul *ngFor="let list of season">
+         <li>
+           <p>{{list.name}}</p>
+           <label>Rating : <em>{{list.rating}}</em></label>
+         </li>
+       </ul>
+     </div>
+   </div>
+  </div>
+  </div>
+  
